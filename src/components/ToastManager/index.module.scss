@@ -1,0 +1,21 @@
+.toast-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+
+  .toast-item {
+    display: inline-block;
+    margin: 1em auto;
+    padding: 1em;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+  }
+}

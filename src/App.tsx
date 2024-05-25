@@ -1,11 +1,14 @@
 import "./App.css";
 import viteLogo from "/vite.svg";
 import reactLogo from "./assets/react.svg";
-import { toast } from "./components/ToastContainer/ToastContainer.tsx";
+import ToastContainer, {
+  toast,
+} from "./components/ToastContainer/ToastContainer.tsx";
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,20 +19,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button
-          onClick={() => {
-            toast.current?.info("123");
-          }}
-        >
-          add{" "}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button onClick={() => toast.current?.info("123")}>add</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }
