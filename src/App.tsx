@@ -19,7 +19,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => toast.current?.info("123")}>add</button>
+        <button onClick={() => toast.current?.info(new Date().getTime())}>
+          add
+        </button>
       </div>
     </>
   );

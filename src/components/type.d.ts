@@ -1,3 +1,4 @@
 export interface ToastManagerHandle {
-  info: (infoNode: ReactNode) => void;
+  info: (content: ReactNode) => number;
+  remove: (id: number) => void;
 }
